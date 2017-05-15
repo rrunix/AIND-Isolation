@@ -336,8 +336,6 @@ class AlphaBetaPlayer(IsolationPlayer):
                     best_move = self.alphabeta(game, depth)
 
             except SearchTimeout:
-                if best_move == None:
-                    print("WTFF")
                 pass
 
         # Return the best move from the last completed search iteration
